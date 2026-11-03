@@ -48,7 +48,7 @@ param_grid = {
     'xgbclassifier__reg_lambda': [1.0, 2.0],          # L2 regularization strength. Higher values help reduce overfitting.
 }
 # Model pipeline
-model_pipeline = make_pipeline(preprocessor, xgb_model)   # complete the code to build the model pipeline by chaining preprocessor and xgb_model
+model_pipeline = make_pipeline(preprocessor, xgb_model)   # to build the model pipeline by chaining preprocessor and xgb_model
 
 # Start MLflow run
 with mlflow.start_run():
