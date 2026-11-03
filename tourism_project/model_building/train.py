@@ -100,6 +100,6 @@ with mlflow.start_run():
     # Save the model next to app.py so the Streamlit app can load it directly,
     # and log it as an MLflow artifact for traceability
     model_path = "tourism_project/deployment/model.joblib"   # Specify the local file path (inside tourism_project/deployment/) where the trained model should be saved.
-    joblib.dump(best_model, model_path)  # complete the code to save the model
+    joblib.dump(best_model, model_path)  # to save the model
     mlflow.log_artifact(model_path, artifact_path="model")
     print(f"Model saved to {model_path}")
