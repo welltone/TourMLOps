@@ -4,7 +4,7 @@ import pandas as pd
 import joblib
 
 # Load the model committed by the pipeline (sits next to this file)
-model_path = os.path.join(os.path.dirname(__file__), "model.joblib")   # filename of the trained model saved by train.py 
+model_path = os.path.join(os.path.dirname(__file__), "model.joblib")   # filename of the trained model saved by train.py
 model = joblib.load(model_path)
 
 # Streamlit UI for Tourism Package Prediction
