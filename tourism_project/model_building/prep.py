@@ -14,10 +14,10 @@ Xtrain, Xtest, ytrain, ytest = train_test_split(
     X, y, test_size=0.2, random_state=42, stratify=y
 )
 # To prevent FileNotFoundError, I stored the files into tourism_project folder.
-Xtrain.to_csv("tourism_project/data/Xtrain.csv", index=False)
-Xtest.to_csv("tourism_project/data/Xtest.csv", index=False)
-ytrain.to_csv("tourism_project/data/ytrain.csv", index=False)
-ytest.to_csv("tourism_project/data/ytest.csv", index=False)
+Xtrain.to_csv("Xtrain.csv", index=False)
+Xtest.to_csv("Xtest.csv", index=False)
+ytrain.to_csv("ytrain.csv", index=False)
+ytest.to_csv("ytest.csv", index=False)
 
 print("Data prepared: train/test splits written.")
 print("ProdTaken distribution in train:")
